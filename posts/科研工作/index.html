@@ -98,7 +98,155 @@
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-10T23:24:09&#43;08:00">September 10, 2023</time></div></div>
 		</header>
 		<div class="content post__content clearfix">
-			
+			<h1 id="团队研究总览">团队研究总览</h1>
+<img src="/img/科研总览.png" alt="/img/科研总览.png" style="zoom:60%;" />
+<h2 id="数据采集">数据采集</h2>
+<img src="/img/数据采集.png" alt="/img/数据采集.png" style="zoom:80%;" />
+<h2 id="异常检测">异常检测</h2>
+<img src="/img/异常检测.png" alt="/img/异常检测.png" style="zoom:80%;" />
+<h2 id="攻击溯源">攻击溯源</h2>
+<img src="/img/攻击溯源.png" alt="/img/攻击溯源.png" style="zoom:80%;" />
+<h2 id="智慧安全">智慧安全</h2>
+<img src="/img/智慧安全.png" alt="/img/智慧安全.png" style="zoom:80%;" />
+<h1 id="01-provdb">01 <strong>ProvDB</strong></h1>
+<h2 id="数据处理中枢provdb"><strong>数据处理中枢ProvDB</strong></h2>
+<img src="/img/ProvDB1.png" alt="/img/ProvDB1.png" style="zoom:60%;" />
+<h2 id="provdb整体设计方案"><strong>ProvDB整体设计方案</strong></h2>
+<p><strong>难点1</strong>：如何应对不同日志源的语义鸿沟，统一表示多源日志？<strong>异构日志的统一表示</strong></p>
+<p><strong>难点2</strong>：APT场景下，大规模溯源图数据难以存储和处理？<strong>基于时序的子图切分数据库</strong></p>
+<p><strong>难点3</strong>：提供接口，服务于各种攻击发现、攻击链还原算法	<strong>日志/Python接口/Cypher接口…</strong></p>
+<img src="/img/ProvDB2.png" alt="/img/ProvDB2.png" style="zoom:80%;" />
+<h2 id="provdb设计细节"><strong>ProvDB<strong><strong>设计</strong></strong>细节</strong></h2>
+<h3 id="可视化操作界面"><strong>可视化操作界面</strong></h3>
+<ul>
+<li>
+<p>ProvDB客户机的所有操作均支持<strong>可视化运行</strong></p>
+<img src="/img/ProvDB3.png" alt="/img/ProvDB3.png" style="zoom:60%;" />
+</li>
+</ul>
+<h3 id="统一的日志表示格式"><strong>统一的日志表示格式</strong></h3>
+<ul>
+<li>
+<p>Canonical Log Form (CLF)：<strong>可扩展的统一日志表示</strong></p>
+</li>
+<li>
+<p>支持审计（Auditd）、应用（Apache、FireFox…）、网络（WireShark…）等多源异构日志</p>
+<img src="/img/ProvDB4.png" alt="/img/ProvDB4.png" style="zoom:60%;" />
+</li>
+</ul>
+<h3 id="溯源子图切分"><strong>溯源子图切分</strong></h3>
+<ul>
+<li>APT场景下，溯源图规模巨大，难以实际应用</li>
+<li>观察：攻击链还原或异常检测算法运行时，被频繁读取的溯源图具有<strong>时间局部性</strong></li>
+<li>引入<strong>Cache机制</strong>：按时序切分溯源图为较小规模子图，API调用时ProvDB按需调度子图加载进内存</li>
+</ul>
+<h2 id="人工溯源与provdb溯源图">人工溯源与ProvDB溯源图</h2>
+<img src="/img/ProvDB5.png" alt="/img/ProvDB5.png" style="zoom:80%;" />
+<h1 id="02-autolabel">02 <strong>AutoLabel</strong></h1>
+<h2 id="自动攻击标注autolabel"><strong>自动攻击标注AutoLabel</strong></h2>
+<img src="/img/AutoLabel1.png" alt="/img/AutoLabel1.png" style="zoom:80%;" />
+<h2 id="autolabelp整体研究方案">AutoLabelp<strong>整体研究方案</strong></h2>
+<p><strong>难点1</strong>：应用、审计和流量日志之间难以关联，如何标注三种日志？</p>
+<p><strong>研究点1：多维度日志融合</strong></p>
+<p><strong>难点2</strong>：缺少攻击行为的形式化描述，如何利用攻击者的信息？</p>
+<p><strong>研究点2：攻击剧本的设计与利用</strong></p>
+<p><strong>难点3</strong>：应用内机制复杂，如何解决依赖爆炸问题？</p>
+<p><strong>研究点3：异步模式下执行流追踪</strong></p>
+<img src="/img/AutoLabel2.png" alt="/img/AutoLabel2.png" style="zoom:60%;" />
+<h1 id="07-semscan">07 SemScan</h1>
+<h2 id="子图主机异常检测semscan">子图主机异常检测SemScan</h2>
+<img src="/img/SemScan1.png" alt="/img/SemScan1.png" style="zoom:60%;" />
+<h2 id="semscan研究概览">SemScan研究概览</h2>
+<h3 id="整体研究方案">整体研究方案</h3>
+<p>难点1：如何融合应用日志与审计日志，完成细粒度单元切分？
+研究点1：程序执行模型、融合规则</p>
+<p>难点2：如何从进程/单元节点出发，生成具有语义的子图？
+研究点2：社区生成算法</p>
+<p>难点3：异常检测应支持长时间建模、零日攻击检测
+研究点3：适用子图的无监督检测</p>
+<p><img src="/img/SemScan2.png" alt="image-20230911163800706"></p>
+<h1 id="08-linkwatch">08 LinkWatch</h1>
+<h2 id="内网流量入侵检测系统linkwatch">内网流量入侵检测系统LinkWatch</h2>
+<p><img src="/img/LinkWatch1.png" alt="image-20230911163956710"></p>
+<img src="/img/LinkWatch2.png" alt="image-20230911164014303" style="zoom:80%;" />
+<img src="/img/LinkWatch3.png" alt="image-20230911164037924" style="zoom: 50%;" />
+<h2 id="linkwatch研究概览">LinkWatch研究概览</h2>
+<h3 id="整体研究方案-1">整体研究方案</h3>
+<p>难点1：如何精确测绘内网资产情况，并以合理的精度建模企业级内网业务的互访关系？
+研究点1：站点应用资产</p>
+<p>难点2：内网存在大量的虚假告警，如何帮助消除虚假告警并凸显出真实告警？
+研究点2：行为模式关联</p>
+<p>难点3：真实场景下的业务行为不断变化，如何动态适应不断变化的业务环境，并进行模型调整？
+研究点3：概念漂移适应</p>
+<p><img src="/img/LinkWatch4.png" alt="image-20230911164324514"></p>
+<p><img src="/img/LinkWatch5.png" alt="image-20230911164413356"></p>
+<h3 id="使用白模型建立访问关系与开放服务模式">使用白模型建立访问关系与开放服务模式</h3>
+<p>针对节点访问关系与开放服务模式形成嵌入向量</p>
+<img src="/img/LinkWatch6.png" alt="image-20230911164506950" style="zoom: 33%;" />
+<h3 id="适应动态变化的业务环境">适应动态变化的业务环境</h3>
+<p>半监督方式，结合专家知识与无标注流量
+提高模型在动态环境下的适应性
+有助于捕捉新的攻击特征</p>
+<img src="/img/LinkWatch7.png" alt="image-20230911164705440" style="zoom:50%;" />
+<img src="/img/LinkWatch8.png" alt="image-20230911164714305" style="zoom:50%;" />
+<h1 id="09-prov-navigator">09 Prov-Navigator</h1>
+<h2 id="多源日志融合溯源算法prov-navigator">多源日志融合溯源算法Prov-Navigator</h2>
+<p><img src="/img/Prov-Navigator1.png" alt="image-20230911164802953"></p>
+<h2 id="prov-navigator研究概览">Prov-Navigator研究概览</h2>
+<h3 id="整体研究方案-2">整体研究方案</h3>
+<p>设计一个非插桩的、不依赖二进制分析的、不依赖硬编码规则的通用溯源模型，以解决APT场景下攻击溯源中的依赖爆炸问题。</p>
+<p>难点1：不同语义信息结构不一，结构化程度低。高层信息溯源图定义缺失。难以将不同层级信息融合为一张溯源图。
+研究点1：融合溯源图构建</p>
+<img src="/img/Prov-Navigator2.png" alt="image-20230911164936759" style="zoom:50%;" />
+<p>难点2：传统日志关联算法复杂度高，在实际应用中面向数据量庞大的APT日志无法支持算法实时性要求。
+研究点2：日志关联算法</p>
+<img src="/img/Prov-Navigator3.png" alt="image-20230911164955613" style="zoom:50%;" />
+<p>难点3：匹配高层信息实现爆炸节点绕过中存在大量无关溯源边被错误关联，降低攻击连重构的准确度。
+研究点3：短路匹配算法</p>
+<img src="/img/Prov-Navigator4.png" alt="image-20230911165012777" style="zoom:50%;" />
+<h2 id="prov-navigator研究细节">Prov-Navigator研究细节</h2>
+<p>Prov-Navigator工作流示意图：</p>
+<img src="/img/Prov-Navigator5.png" alt="image-20230911165237551" style="zoom:80%;" />
+<h2 id="prov-navigator实验结果">Prov-Navigator实验结果</h2>
+<p>实验结果（攻击链重构实验）：</p>
+<p>对比方法：Prov-Navigator、无SPP ranking溯源算法
+Prov-Navigator达到攻击溯源95%的平均准确率以及100%的平均查全率。但未使用SPP ranking功能的Prov-Navigator只能达到51%的平均准确率和81%的平均查全率。</p>
+<p><strong>Table1: Prov-Navigator攻击故事重建效果</strong></p>
+<img src="/img/Prov-Navigator6.png" alt="image-20230911165359979" style="zoom:50%;" />
+<p><strong>Table2: 运行空间与运行时间负载</strong></p>
+<img src="/img/Prov-Navigator7.png" alt="image-20230911165423634" style="zoom:50%;" />
+<h1 id="10-tesec">10 TeSec</h1>
+<h2 id="web应用攻击溯源tesec">WEB应用攻击溯源TeSec</h2>
+<p><img src="/img/TeSec1.png" alt="image-20230911165528349"></p>
+<h2 id="tesec研究概览">TeSec研究概览</h2>
+<h3 id="整体研究方案-3">整体研究方案</h3>
+<p>难点1：采集客户端日志很困难，如何在服务端推导用户侧信息？
+研究点1：行为流建模方法</p>
+<p>难点2：在高并发场景下，如何关联交错的审计日志与网络请求？
+研究点2：高并发精准溯源方法</p>
+<p>难点3：WEB应用具有多样性，如何适配协程、多进程和多线程？
+研究点3：并发模式适配研究</p>
+<p><img src="/img/TeSec2.png" alt="image-20230911165658181"></p>
+<h2 id="tesec研究细节">TeSec研究细节</h2>
+<h3 id="基于审计日志分区技术的高并发溯源方法">基于审计日志分区技术的高并发溯源方法</h3>
+<p>主动向审计系统中插入特殊日志，分割不同执行单元。</p>
+<img src="/img/TeSec3.png" alt="image-20230911165740766" style="zoom: 30%;" />
+<img src="/img/TeSec4.png" alt="image-20230911165804012" style="zoom:30%;" />
+<h3 id="基于ac自动机的行为流建模方法">基于AC自动机的行为流建模方法</h3>
+<p>将UI元素与后端请求的匹配问题抽象为字符串匹配问题。</p>
+<img src="/img/TeSec5.png" alt="image-20230911224801935" style="zoom:50%;" />
+<p>采用AC自动机在线性复杂度下进行匹配。</p>
+<img src="/img/TeSec6.png" alt="image-20230911165940842" style="zoom:67%;" />
+<h2 id="tesec实战效果">TeSec实战效果</h2>
+<p>实验结果（高并发下的匹配实验）：</p>
+<p>对比方法：UIScope（时间戳匹配）
+高并发场景下具有显著优势，都达到99%的平均准确率。时空负载均不超过5%，可适用于商业场景。</p>
+<p><strong>TeSec的准确率（保持99%以上）</strong></p>
+<img src="/img/TeSec7.png" alt="image-20230911170101406" style="zoom:30%;" />
+<p><strong>UIScope的准确率（高并发下显著下降）</strong></p>
+<img src="/img/TeSec8.png" alt="image-20230911170130388" style="zoom:30%;" />
+<p><strong>负载情况（不超过5%）</strong></p>
+<img src="/img/TeSec9.png" alt="image-20230911170201968" style="zoom:30%;" />
 		</div>
 	</article>
 </main>
