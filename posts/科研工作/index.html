@@ -100,59 +100,26 @@
 		<div class="content post__content clearfix">
 			<h1 id="团队研究总览">团队研究总览</h1>
 <img src="/img/科研总览.png" alt="/img/科研总览.png" style="zoom:60%;" />
-<h2 id="数据采集">数据采集</h2>
-<img src="/img/数据采集.png" alt="/img/数据采集.png" style="zoom:80%;" />
-<h2 id="异常检测">异常检测</h2>
-<img src="/img/异常检测.png" alt="/img/异常检测.png" style="zoom:80%;" />
-<h2 id="攻击溯源">攻击溯源</h2>
-<img src="/img/攻击溯源.png" alt="/img/攻击溯源.png" style="zoom:80%;" />
-<h2 id="智慧安全">智慧安全</h2>
-<img src="/img/智慧安全.png" alt="/img/智慧安全.png" style="zoom:80%;" />
 <h1 id="01-provdb">01 <strong>ProvDB</strong></h1>
 <h2 id="数据处理中枢provdb"><strong>数据处理中枢ProvDB</strong></h2>
-<img src="/img/ProvDB1.png" alt="/img/ProvDB1.png" style="zoom:60%;" />
-<h2 id="provdb整体设计方案"><strong>ProvDB整体设计方案</strong></h2>
-<p><strong>难点1</strong>：如何应对不同日志源的语义鸿沟，统一表示多源日志？<strong>异构日志的统一表示</strong></p>
-<p><strong>难点2</strong>：APT场景下，大规模溯源图数据难以存储和处理？<strong>基于时序的子图切分数据库</strong></p>
-<p><strong>难点3</strong>：提供接口，服务于各种攻击发现、攻击链还原算法	<strong>日志/Python接口/Cypher接口…</strong></p>
-<img src="/img/ProvDB2.png" alt="/img/ProvDB2.png" style="zoom:80%;" />
-<h2 id="provdb设计细节"><strong>ProvDB<strong><strong>设计</strong></strong>细节</strong></h2>
-<h3 id="可视化操作界面"><strong>可视化操作界面</strong></h3>
-<ul>
-<li>
-<p>ProvDB客户机的所有操作均支持<strong>可视化运行</strong></p>
-<img src="/img/ProvDB3.png" alt="/img/ProvDB3.png" style="zoom:60%;" />
-</li>
-</ul>
-<h3 id="统一的日志表示格式"><strong>统一的日志表示格式</strong></h3>
-<ul>
-<li>
-<p>Canonical Log Form (CLF)：<strong>可扩展的统一日志表示</strong></p>
-</li>
-<li>
-<p>支持审计（Auditd）、应用（Apache、FireFox…）、网络（WireShark…）等多源异构日志</p>
-<img src="/img/ProvDB4.png" alt="/img/ProvDB4.png" style="zoom:60%;" />
-</li>
-</ul>
-<h3 id="溯源子图切分"><strong>溯源子图切分</strong></h3>
-<ul>
-<li>APT场景下，溯源图规模巨大，难以实际应用</li>
-<li>观察：攻击链还原或异常检测算法运行时，被频繁读取的溯源图具有<strong>时间局部性</strong></li>
-<li>引入<strong>Cache机制</strong>：按时序切分溯源图为较小规模子图，API调用时ProvDB按需调度子图加载进内存</li>
-</ul>
-<h2 id="人工溯源与provdb溯源图">人工溯源与ProvDB溯源图</h2>
-<img src="/img/ProvDB5.png" alt="/img/ProvDB5.png" style="zoom:80%;" />
+<p>​	<strong>ProvDB</strong>：面向<strong>APT场景的溯源图采集和存储工具</strong>。在多系统、多数据源的分布式场景下，实现日志数据采集和溯源图构建的全自动化，形成溯源图数据集并提供数据分析、版本管理、多人协作功能。</p>
+<img src="/img/ProvDB.png" alt="/img/ProvDB.png" style="zoom:100%;" />
 <h1 id="02-autolabel">02 <strong>AutoLabel</strong></h1>
 <h2 id="自动攻击标注autolabel"><strong>自动攻击标注AutoLabel</strong></h2>
-<img src="/img/AutoLabel1.png" alt="/img/AutoLabel1.png" style="zoom:80%;" />
-<h2 id="autolabelp整体研究方案">AutoLabelp<strong>整体研究方案</strong></h2>
-<p><strong>难点1</strong>：应用、审计和流量日志之间难以关联，如何标注三种日志？</p>
-<p><strong>研究点1：多维度日志融合</strong></p>
-<p><strong>难点2</strong>：缺少攻击行为的形式化描述，如何利用攻击者的信息？</p>
-<p><strong>研究点2：攻击剧本的设计与利用</strong></p>
-<p><strong>难点3</strong>：应用内机制复杂，如何解决依赖爆炸问题？</p>
-<p><strong>研究点3：异步模式下执行流追踪</strong></p>
-<img src="/img/AutoLabel2.png" alt="/img/AutoLabel2.png" style="zoom:60%;" />
+<p>​	<strong>AutoLabel</strong>：针对<strong>APT场景的日志自动标注</strong>方法。通过对并发模式的分析，对程序执行流进行分析，并利用已知的攻击剧本和结合插桩手段引入的特殊标识，对各类日志进行攻击行为的精确标注。</p>
+<img src="/img/AutoLabel.png" alt="/img/AutoLabel.png" style="zoom:80%;" />
+<h2 id="03-测试引导的数据压缩stawc">03 测试引导的数据压缩STAWC</h2>
+<p><strong>STAWC</strong>:面向下游异常检测与攻击溯源的数据压缩工具。利用软件测试技术，使用大量用例得到应用行为相关日志制作白名单。对白名单内的日志进行语义聚合得到模板，使用模板去替换正常行为达到数据压缩目标。</p>
+<img src="/img/STAWC.png" alt="/img/STAWC.png" style="zoom:80%;" />
+<h2 id="04-分布外异常检测openids">04 分布外异常检测OpenIDS</h2>
+<p><strong>OpenIDS</strong>:面向开放世界APT场景的攻击行为建模和异常检测工具。利用分布式集群下多主机内各个层次的日志，构建程序行为模型和文件特征模型，结合深度学习与开集识别，提高异常检测准确率，保证强解释性。</p>
+<img src="/img/OpenIDS.png" alt="/img/OpenIDS.png" style="zoom:80%;" />
+<h2 id="05-基于接口梳理的参数检测api-guardian">05 基于接口梳理的参数检测API-Guardian</h2>
+<p><strong>API-Guardian</strong>:基于应用接口梳理的参数建模与检测算法。从企业全流量中自动识别与归类API接口，形成API资产目录，并建立正常API参数的特征模型，从而对流量进行异常检测。</p>
+<img src="/img/API-Guardian.png" alt="/img/API-Guardian.png" style="zoom:20%;" />
+<h2 id="06-边级主机威胁检测dhan">06 边级主机威胁检测DHAN</h2>
+<p><strong>DHAN</strong>:基于溯源图学习的边级入侵检测系统。将溯源图边级入侵检测问题建模为图神经网络领域的链接预测问题，并且使用动态异质图技术精确建模系统行为来完成异常检测任务。</p>
+<img src="/img/DHAN.png" alt="/img/DHAN.png" style="zoom:80%;" />
 <h1 id="07-semscan">07 SemScan</h1>
 <h2 id="子图主机异常检测semscan">子图主机异常检测SemScan</h2>
 <img src="/img/SemScan1.png" alt="/img/SemScan1.png" style="zoom:60%;" />
