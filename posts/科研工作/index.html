@@ -86,12 +86,10 @@
 		<div class="content post__content clearfix">
 			<h1 id="团队研究总览">团队研究总览</h1>
 <img src="/img/科研总览.png" alt="/img/科研总览.png" style="zoom:60%;" />
-<h1 id="01-provdb">01 <strong>ProvDB</strong></h1>
-<h2 id="数据处理中枢provdb"><strong>数据处理中枢ProvDB</strong></h2>
+<h2 id="01-数据处理中枢provdb">01 数据处理中枢ProvDB</h2>
 <p>​	<strong>ProvDB</strong>：面向<strong>APT场景的溯源图采集和存储工具</strong>。在多系统、多数据源的分布式场景下，实现日志数据采集和溯源图构建的全自动化，形成溯源图数据集并提供数据分析、版本管理、多人协作功能。</p>
 <img src="/img/ProvDB.png" alt="/img/ProvDB.png" style="zoom:100%;" />
-<h1 id="02-autolabel">02 <strong>AutoLabel</strong></h1>
-<h2 id="自动攻击标注autolabel"><strong>自动攻击标注AutoLabel</strong></h2>
+<h2 id="02-自动攻击标注autolabel">02 自动攻击标注AutoLabel</h2>
 <p>​	<strong>AutoLabel</strong>：针对<strong>APT场景的日志自动标注</strong>方法。通过对并发模式的分析，对程序执行流进行分析，并利用已知的攻击剧本和结合插桩手段引入的特殊标识，对各类日志进行攻击行为的精确标注。</p>
 <img src="/img/AutoLabel.png" alt="/img/AutoLabel.png" style="zoom:80%;" />
 <h2 id="03-测试引导的数据压缩stawc">03 测试引导的数据压缩STAWC</h2>
@@ -106,30 +104,28 @@
 <h2 id="06-边级主机威胁检测dhan">06 边级主机威胁检测DHAN</h2>
 <p><strong>DHAN</strong>:基于溯源图学习的边级入侵检测系统。将溯源图边级入侵检测问题建模为图神经网络领域的链接预测问题，并且使用动态异质图技术精确建模系统行为来完成异常检测任务。</p>
 <img src="/img/DHAN.png" alt="/img/DHAN.png" style="zoom:80%;" />
-<h2 id="07-semscan">07 SemScan</h2>
+<h2 id="07-子图主机异常检测semscan">07 子图主机异常检测SemScan</h2>
 <p><strong>SemScan</strong>：基于任务社区的实时主机异常检测系统。利用日志融合技术对应用进行单元切分，排除错误依赖。利用控制流围绕主节点生成具有语义的任务社区，以社区作为快照协同无监督检测算法完成异常检测任务。</p>
 <img src="/img/07.png" alt="/img/SemScan1.png" style="zoom:70%;" />
-<h2 id="08-linkwatch">08 LinkWatch</h2>
+<h2 id="08-内网流量入侵检测系统linkwatch">08 内网流量入侵检测系统LinkWatch</h2>
 <p><strong>LinkWatch</strong>：内网流量入侵检测系统。将内网流量入侵检测问题建模为内网资产访问关系梳理与时序链接预测问题，并且使用时序图学习技术精确建模系统行为来完成异常检测任务。</p>
 <img src="/img/08.jpeg" alt="image-20230911164014303" style="zoom:50%;" />
-<h2 id="09-prov-navigator">09 Prov-Navigator</h2>
+<h2 id="09-多源日志融合溯源算法prov-navigator">09 多源日志融合溯源算法Prov-Navigator</h2>
 <p><strong>Prov-Navigator</strong>：面向APT场景的攻击溯源工具。利用各个层次的多源异构日志数据，基于关联算法构建融合溯源图，通过短路搜索算法，提高攻击审查效率，保证攻击链重构的准确性与实时性。</p>
 <img src="/img/09.png" alt="image-20230911164936759" style="zoom:50%;" />
-<h2 id="10-tesec">10 TeSec</h2>
+<h2 id="10-web应用攻击溯源tesec">10 WEB应用攻击溯源TeSec</h2>
 <p><strong>TeSec</strong>：针对高并发场景下WEB应用的服务端攻击精确溯源工具。通过将应用级正常行为流和底层系统溯源图进行建模和匹配，在底层安全事件发生时能够及时溯源到攻击的入口。</p>
 <img src="/img/10.png" alt="image-20230911165740766" style="zoom: 40%;" />
-<h1 id="11-vrai">11 <strong>VRAI</strong></h1>
-<h2 id="面向漏洞整治的攻击溯源vrai"><strong>面向漏洞整治的攻击溯源VRAI</strong></h2>
+<h2 id="11-面向漏洞整治的攻击溯源vrai">11 面向漏洞整治的攻击溯源VRAI</h2>
 <p>​<strong>VRAI</strong>：面向<strong>攻击溯源的基于漏洞函数调用路径评注和匹配的漏洞定位</strong>方法。不使用侵入式数据采集而仅使用系统审计日志，离线构造准确精简的应用程序执行模型，将二者系统调用序列进行匹配，定位漏洞函数路径。</p>
 <img src="/img/VRAI.png" alt="/img/VRAI.png" style="zoom:100%;" />
-<h1 id="12-erinyes">12 <strong>ERINYES</strong></h1>
-<h2 id="轻量级无服务器攻击溯源erinyes"><strong>轻量级无服务器攻击溯源ERINYES</strong></h2>
+<h2 id="12-轻量级无服务器攻击溯源erinyes">12 轻量级无服务器攻击溯源ERINYES</h2>
 <p>​<strong>ERINYES</strong>：面向<strong>无服务器环境攻击溯源</strong>工具。开发内核级监控容器资产技术，基于主机轻量化采集不同隔离环境内审计信息。全方位感知集群态势。网络请求标记技术构建执行分区，加速事件溯源效率。</p>
 <img src="/img/ERINYES.png" alt="/img/ERINYES.png" style="zoom:100%;" />
-<h1 id="13-provlm">13 <strong>ProvLM</strong></h1>
-<h2 id="大安全模型provlm"><strong>大安全模型ProvLM</strong></h2>
+<h2 id="13-大安全模型provlm">13 大安全模型ProvLM</h2>
 <p>​<strong>ProvLM</strong>：面向<strong>网络安全领域的基于大模型技术的全面安全系统</strong>。依赖人工智能强大的计算能力，掌握的大量网络安全知识，对各种网络安全场景进行细致分析、监测和防御，为网安人员处理网络安全问题提供助力。</p>
 <img src="/img/ProvLM.png" alt="/img/ProvLM.png" style="zoom:100%;" />
+
 		</div>
 	</article>
 </main>
