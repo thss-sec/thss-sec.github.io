@@ -6,7 +6,19 @@
     <description>Recent content on 清华大学网络安全态势感知团队</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 14 Sep 2023 22:02:28 +0800</lastBuildDate><atom:link href="https://thss-sec.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 22:22:21 +0800</lastBuildDate><atom:link href="https://thss-sec.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成果列表</title>
+      <link>https://thss-sec.github.io/posts/%E6%88%90%E6%9E%9C%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Thu, 14 Sep 2023 22:22:21 +0800</pubDate>
+      
+      <guid>https://thss-sec.github.io/posts/%E6%88%90%E6%9E%9C%E5%88%97%E8%A1%A8/</guid>
+      <description>【论文】
+ Ruihua Wang, Yihao Peng, Yilun Sun, Xuancheng Zhang, HaiWan, xibin Zhao*. TeSec: Accurate Server-Side Attack Investigation for Web Applications. IEEE Security and Privacy (IEEE S&amp;amp;P) 2023
+ Nan Wang, Yubo Zhang, xibin Zhao*, Yingli Zheng, Hao Fan, Boya Zhou, Yue Gao. Search-Based Cost-Sensitive Hypergraph Learning for Anomaly Detection, Information Science, 2022
+ Hai Wan, Xinwei Zhang, Yubo Zhang, xibin Zhao*, Shihui Ying, Yue Gao*, Structure Evolution on Manifold for Graph Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022</description>
+    </item>
+    
     <item>
       <title>项目列表</title>
       <link>https://thss-sec.github.io/posts/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8/</link>
@@ -23,27 +35,6 @@
       
       <guid>https://thss-sec.github.io/posts/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
       <description>网络安全态势感知团队工程实践框架 清华网络数据底座平台 数据底座业务场景 清华网络数据底座平台部署图 数据底座特色功能 真实案例-链路展开（蜜罐扫描） 真实案例-链路展开（信息侦查） 星阵网络安全能力提升平台 安全能力培训 网络安全咨询、设计和实施 方案咨询 实施交付 OT网络:工业网络安全形势严峻，危及国家安全 OT网络：主要研究方向 OT-工控协议自动化漏洞挖掘平台 OT网络：工业网络安全靶场 OT网络：安全有效性验证平台 ``</description>
-    </item>
-    
-    <item>
-      <title>科研工作</title>
-      <link>https://thss-sec.github.io/posts/%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C/</link>
-      <pubDate>Sun, 10 Sep 2023 23:24:09 +0800</pubDate>
-      
-      <guid>https://thss-sec.github.io/posts/%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C/</guid>
-      <description>团队研究总览 01 数据处理中枢ProvDB ​	ProvDB：面向APT场景的溯源图采集和存储工具。在多系统、多数据源的分布式场景下，实现日志数据采集和溯源图构建的全自动化，形成溯源图数据集并提供数据分析、版本管理、多人协作功能。
-02 自动攻击标注AutoLabel ​	AutoLabel：针对APT场景的日志自动标注方法。通过对并发模式的分析，对程序执行流进行分析，并利用已知的攻击剧本和结合插桩手段引入的特殊标识，对各类日志进行攻击行为的精确标注。
-03 测试引导的数据压缩STAWC STAWC:面向下游异常检测与攻击溯源的数据压缩工具。利用软件测试技术，使用大量用例得到应用行为相关日志制作白名单。对白名单内的日志进行语义聚合得到模板，使用模板去替换正常行为达到数据压缩目标。
-04 分布外异常检测OpenIDS OpenIDS:面向开放世界APT场景的攻击行为建模和异常检测工具。利用分布式集群下多主机内各个层次的日志，构建程序行为模型和文件特征模型，结合深度学习与开集识别，提高异常检测准确率，保证强解释性。
-05 基于接口梳理的参数检测API-Guardian API-Guardian:基于应用接口梳理的参数建模与检测算法。从企业全流量中自动识别与归类API接口，形成API资产目录，并建立正常API参数的特征模型，从而对流量进行异常检测。
-06 边级主机威胁检测DHAN DHAN:基于溯源图学习的边级入侵检测系统。将溯源图边级入侵检测问题建模为图神经网络领域的链接预测问题，并且使用动态异质图技术精确建模系统行为来完成异常检测任务。
-07 子图主机异常检测SemScan SemScan：基于任务社区的实时主机异常检测系统。利用日志融合技术对应用进行单元切分，排除错误依赖。利用控制流围绕主节点生成具有语义的任务社区，以社区作为快照协同无监督检测算法完成异常检测任务。
-08 内网流量入侵检测系统LinkWatch LinkWatch：内网流量入侵检测系统。将内网流量入侵检测问题建模为内网资产访问关系梳理与时序链接预测问题，并且使用时序图学习技术精确建模系统行为来完成异常检测任务。
-09 多源日志融合溯源算法Prov-Navigator Prov-Navigator：面向APT场景的攻击溯源工具。利用各个层次的多源异构日志数据，基于关联算法构建融合溯源图，通过短路搜索算法，提高攻击审查效率，保证攻击链重构的准确性与实时性。
-10 WEB应用攻击溯源TeSec TeSec：针对高并发场景下WEB应用的服务端攻击精确溯源工具。通过将应用级正常行为流和底层系统溯源图进行建模和匹配，在底层安全事件发生时能够及时溯源到攻击的入口。
-11 面向漏洞整治的攻击溯源VRAI ​VRAI：面向攻击溯源的基于漏洞函数调用路径评注和匹配的漏洞定位方法。不使用侵入式数据采集而仅使用系统审计日志，离线构造准确精简的应用程序执行模型，将二者系统调用序列进行匹配，定位漏洞函数路径。
-12 轻量级无服务器攻击溯源ERINYES ​ERINYES：面向无服务器环境攻击溯源工具。开发内核级监控容器资产技术，基于主机轻量化采集不同隔离环境内审计信息。全方位感知集群态势。网络请求标记技术构建执行分区，加速事件溯源效率。
-13 大安全模型ProvLM ​ProvLM：面向网络安全领域的基于大模型技术的全面安全系统。依赖人工智能强大的计算能力，掌握的大量网络安全知识，对各种网络安全场景进行细致分析、监测和防御，为网安人员处理网络安全问题提供助力。</description>
     </item>
     
     <item>
