@@ -45,7 +45,7 @@ body {
 	margin: 0;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	font-size: .875rem;
+	font-size: 0.975rem;
 	line-height: 1.6;
 	word-wrap: break-word;
 	background: #f7f7f7;
@@ -417,18 +417,19 @@ select {
 
 .logo__title {
 	font-size: 32px;
-	font-size: 2rem;
+	font-size: 2.25rem;
 	font-weight: 700;
 	line-height: 1;
+	padding-bottom: 8px;
 	color: #000;
 }
 
 .logo__tagline {
 	display: inline-block;
-	padding-top: 10px;
+	padding-top: 16px;
 	margin-top: 10px;
 	font-size: 14px;
-	font-size: .875rem;
+	font-size: 1.4rem;
 	font-weight: 700;
 	line-height: 1;
 	color: #e22d30;
