@@ -497,6 +497,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	background: #2a2a2a;
 }
 
+/* 菜单宽度=100/菜单数量 */
+.menu__item {
+	width: 16.66%;
+	text-align: center;
+}
+
 .menu__item:hover {
 	background: #e22d30;
 }
