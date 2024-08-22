@@ -499,7 +499,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 /* 菜单宽度=100/菜单数量 */
 .menu__item {
-	width: 14.285%;
+	width: 14.28%;
 	text-align: center;
 }
 
