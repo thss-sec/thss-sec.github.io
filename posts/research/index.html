@@ -100,7 +100,53 @@
 	<article class="post">
 		
 		<div class="content post__content clearfix">
-			<h2 id="面向web应用的服务器端攻击调查技术">面向Web应用的服务器端攻击调查技术</h2>
+			
+<div style="text-align: justify; margin-bottom: 30px;">
+	<h2>团队科研愿景：面向全场景的软件智能自愈与全链路安全体系</h2>
+	<p style="font-size: 1.05em; color: #444;">在日益复杂的网络威胁环境下，传统的"被动防御"已难以应对高级持续性威胁（APT）与未知漏洞利用。我们团队致力于打破传统安全防护的孤岛，以<strong>"软件智能自愈"</strong>为核心愿景，构建覆盖<strong>"事前数据准备 — 事中异常检测 — 事后溯源定位 — 实时自愈阻断"</strong>的全链路安全闭环。</p>
+</div>
+
+<div style="text-align: justify; margin-bottom: 30px;">
+	<h3 style="margin-bottom: 12px;">科研主线：智能自愈的安全闭环</h3>
+	<p>我们的研究工作紧密围绕软件生命周期与攻击发生的时间线，形成了四个环环相扣的子方向：</p>
+	<ul style="list-style: none; padding-left: 0;">
+		<li style="margin-bottom: 10px; padding-left: 0;">
+			<strong>部署与数据基石（事前）：</strong>高质量的数据是智能安全的前提。我们研究多源异构日志的融合、细粒度自动化标注技术，以及面向大规模取证的溯源图压缩算法，为复杂的安全分析提供低噪、高密度的可靠数据空间。
+		</li>
+		<li style="margin-bottom: 10px; padding-left: 0;">
+			<strong>运行时智能检测（事中）：</strong>针对高阶复杂关联与未知威胁，我们提出了基于行为流建模、图神经网络（GNN）与大模型（LLM）的异常检测框架。通过模型轻量化与鲁棒性增强，实现低虚警、零漏报的实时入侵与攻击检测。
+		</li>
+		<li style="margin-bottom: 10px; padding-left: 0;">
+			<strong>攻击溯源与取证（事后）：</strong>当安全事件发生，我们利用创新的"影子路径引导"、行为图抽象等技术，突破依赖爆炸与语义鸿沟的瓶颈，精准还原攻击故事，实现复杂多步骤攻击的动态实时跟随。
+		</li>
+		<li style="margin-bottom: 10px; padding-left: 0;">
+			<strong>根因定位与自愈阻断（闭环）：</strong>从发现攻击到修复漏洞的"最后一公里"。我们致力于将恶意行为精准映射至源代码或二进制函数的具体位置，并研发自动化运行时遏制技术（如微服务协程级隔离、Web请求级拦截），在不中断业务的前提下实现软件的动态自愈。
+		</li>
+	</ul>
+</div>
+
+<div style="text-align: justify; margin-bottom: 30px;">
+	<h3 style="margin-bottom: 12px;">全场景覆盖：从底层系统到前沿AI应用</h3>
+	<p>现代软件架构日益多样化，我们的安全自愈体系不仅具备理论深度，更在多种实际工业场景与异构对象中得到了广泛验证：</p>
+	<div style="margin-bottom: 10px;">Web应用与服务：高并发下的请求级攻击溯源与无训练异常检测、漏洞自动化运行时遏制。</div>
+	<div style="margin-bottom: 10px;">云原生与微服务：Serverless无感知计算的溯源分析、Go微服务协程粒度的算法复杂度攻击（AC-DoS）防御。</div>
+	<div style="margin-bottom: 10px;">底层系统与终端：C/C++二进制程序的漏洞定位、面向实际部署的鲁棒终端威胁检测、Linux系统调用层面的日志融合。</div>
+	<div style="margin-bottom: 10px;">大模型与AI安全：针对大推理模型（LRM）的资源消耗型攻击防御、大语言模型强化学习安全策略、LLM文本水印溯源。</div>
+	<div style="margin-bottom: 10px;">工业与通用代码：复杂网络交互中的图异常检测、功能性代码克隆与脆弱性分析。</div>
+</div>
+
+<div style="text-align: justify; margin-bottom: 20px;">
+	<p>近年来，团队在上述领域取得了一系列突破性进展，相关成果已广泛发表于 <strong>IEEE S&amp;P, USENIX Security, ICSE, FSE, AAAI, WWW, IEEE TIFS, IEEE TDSC, TPAMI</strong> 等网络安全、软件工程与人工智能领域的国际顶级会议及期刊上。</p>
+</div>
+
+<!-- 闭环架构图占位 -->
+<div style="text-align: center; margin: 30px 0;">
+	<p style="color: #999; font-style: italic;">（闭环架构图）</p>
+</div>
+
+<hr style="margin: 30px 0;">
+
+<h2 id="面向web应用的服务器端攻击调查技术">面向Web应用的服务器端攻击调查技术</h2>
 <div style="text-align: justify;">
 　　WEB应用一般采用浏览器-服务器架构（B-S架构），用户在PC上使用浏览器加载网站页面，通过各类界面操作来向服务端发送网络请求，以使用网站提供的各类功能。这种模式给了黑客可乘之机，他们可以通过攻击WEB应用来进入公司内网。当攻击发生并被入侵检测系统(IDS)报警后，安全人员希望找到精确的攻击入口，即黑客使用了什么功能、点击了什么按钮发起了这次攻击，以对漏洞进行精确的修复。但现有的攻击溯源手段无法达到理想的效果，无法成功溯源到黑客互动的界面元素（UI元素），其原因主要包括：缺少将攻击和UI元素进行关联的信息、很难采集客户端日志、以及部署于服务端的应用程序具有很高的并发量。
 </div>
