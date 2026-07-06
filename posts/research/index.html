@@ -100,327 +100,315 @@
 	<article class="post">
 		
 		<div class="content post__content clearfix">
-			
-<style>
-	.research-intro-wrapper {
-		font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
-		color: #334155;
-		line-height: 1.8;
-	}
-	.vision-box {
-		background: linear-gradient(to right, #f8fafc, #eff6ff);
-		border-left: 5px solid #2563eb;
-		padding: 25px 30px;
-		border-radius: 0 8px 8px 0;
-		margin-bottom: 40px;
-		box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-	}
-	.vision-box h2 {
-		margin-top: 0;
-		color: #1e293b;
-		font-size: 1.5em;
-		margin-bottom: 15px;
-	}
-	.vision-box p {
-		margin: 0;
-		font-size: 1.05em;
-		color: #475569;
-		text-align: justify;
-	}
-	.section-title {
-		font-size: 1.3em;
-		color: #0f172a;
-		border-bottom: 2px solid #e2e8f0;
-		padding-bottom: 10px;
-		margin-bottom: 25px;
-		margin-top: 40px;
-		font-weight: 700;
-	}
-	.grid-cards {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-		gap: 20px;
-		margin-bottom: 40px;
-	}
-	.card {
-		background: #ffffff;
-		border: 1px solid #e2e8f0;
-		border-radius: 8px;
-		padding: 22px;
-		transition: transform 0.2s, box-shadow 0.2s;
-	}
-	.card:hover {
-		transform: translateY(-3px);
-		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-	}
-	.card h4 {
-		margin-top: 0;
-		margin-bottom: 12px;
-		color: #1d4ed8;
-		font-size: 1.1em;
-		display: flex;
-		align-items: center;
-		gap: 8px;
-	}
-	.card p {
-		margin: 0;
-		font-size: 0.95em;
-		color: #64748b;
-		text-align: justify;
-	}
-	.scenario-list {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 40px 0;
-	}
-	.scenario-list li {
-		margin-bottom: 15px;
-		padding: 15px 20px;
-		background: #f8fafc;
-		border-radius: 6px;
-		display: flex;
-		align-items: flex-start;
-		gap: 15px;
-		border: 1px solid #f1f5f9;
-	}
-	@media (max-width: 600px) {
-		.scenario-list li { flex-direction: column; gap: 8px; }
-	}
-	.scenario-tag {
-		background: #dbeafe;
-		color: #1e40af;
-		padding: 4px 12px;
-		border-radius: 20px;
-		font-size: 0.85em;
-		font-weight: 600;
-		white-space: nowrap;
-	}
-	.scenario-desc {
-		margin: 0;
-		font-size: 0.95em;
-		padding-top: 2px;
-		color: #475569;
-		text-align: justify;
-	}
-	.pub-summary {
-		background: #f1f5f9;
-		padding: 20px 25px;
-		border-radius: 8px;
-		text-align: justify;
-		font-size: 0.95em;
-		margin-bottom: 30px;
-		color: #475569;
-	}
-	.pub-summary strong {
-		color: #0f172a;
-	}
-	.img-placeholder {
-		text-align: center;
-		margin: 40px 0;
-		padding: 50px 20px;
-		background: #fafafa;
-		border: 2px dashed #cbd5e1;
-		border-radius: 8px;
-		color: #94a3b8;
-	}
+			<style>
+.research-intro-wrapper {
+font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+color: #334155;
+line-height: 1.8;
+}
+.vision-box {
+background: linear-gradient(to right, #f8fafc, #eff6ff);
+border-left: 5px solid #2563eb;
+padding: 25px 30px;
+border-radius: 0 8px 8px 0;
+margin-bottom: 40px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+.vision-box h2 {
+margin-top: 0;
+color: #1e293b;
+font-size: 1.5em;
+margin-bottom: 15px;
+}
+.vision-box p {
+margin: 0;
+font-size: 1.05em;
+color: #475569;
+text-align: justify;
+}
+.section-title {
+font-size: 1.3em;
+color: #0f172a;
+border-bottom: 2px solid #e2e8f0;
+padding-bottom: 10px;
+margin-bottom: 25px;
+margin-top: 40px;
+font-weight: 700;
+}
+.grid-cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 20px;
+margin-bottom: 40px;
+}
+.card {
+background: #ffffff;
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+padding: 22px;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.card h4 {
+margin-top: 0;
+margin-bottom: 12px;
+color: #1d4ed8;
+font-size: 1.1em;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.card p {
+margin: 0;
+font-size: 0.95em;
+color: #64748b;
+text-align: justify;
+}
+.scenario-list {
+list-style: none;
+padding: 0;
+margin: 0 0 40px 0;
+}
+.scenario-list li {
+margin-bottom: 15px;
+padding: 15px 20px;
+background: #f8fafc;
+border-radius: 6px;
+display: flex;
+align-items: flex-start;
+gap: 15px;
+border: 1px solid #f1f5f9;
+}
+@media (max-width: 600px) {
+.scenario-list li { flex-direction: column; gap: 8px; }
+}
+.scenario-tag {
+background: #dbeafe;
+color: #1e40af;
+padding: 4px 12px;
+border-radius: 20px;
+font-size: 0.85em;
+font-weight: 600;
+white-space: nowrap;
+}
+.scenario-desc {
+margin: 0;
+font-size: 0.95em;
+padding-top: 2px;
+color: #475569;
+text-align: justify;
+}
+.pub-summary {
+background: #f1f5f9;
+padding: 20px 25px;
+border-radius: 8px;
+text-align: justify;
+font-size: 0.95em;
+margin-bottom: 30px;
+color: #475569;
+}
+.pub-summary strong {
+color: #0f172a;
+}
+.img-placeholder {
+text-align: center;
+margin: 40px 0;
+padding: 50px 20px;
+background: #fafafa;
+border: 2px dashed #cbd5e1;
+border-radius: 8px;
+color: #94a3b8;
+}
 </style>
-
 <div class="research-intro-wrapper">
-	
-	<div class="vision-box">
-		<h2>团队科研愿景：面向全场景的软件智能自愈与全链路安全体系</h2>
-		<p>在日益复杂的网络威胁环境下，传统的"被动防御"已难以应对高级持续性威胁（APT）与未知漏洞利用。我们团队致力于打破传统安全防护的孤岛，以<strong>"软件智能自愈"</strong>为核心愿景，构建覆盖<strong>"事前数据准备 — 事中异常检测 — 事后溯源定位 — 实时自愈阻断"</strong>的全链路安全闭环。</p>
-	</div>
-
-	<h3 class="section-title">科研主线：智能自愈的安全闭环</h3>
-	<p style="margin-bottom: 20px; color: #475569;">我们的研究工作紧密围绕软件生命周期与攻击发生的时间线，形成了四个环环相扣的子方向：</p>
-	
-	<div class="grid-cards">
-		<div class="card">
-			<h4>🛠 部署与数据基石 (事前)</h4>
-			<p>高质量的数据是智能安全的前提。我们研究多源异构日志的融合、细粒度自动化标注技术，以及面向大规模取证的溯源图压缩算法，为复杂的安全分析提供低噪、高密度的可靠数据空间。</p>
-		</div>
-		<div class="card">
-			<h4>🛡 运行时智能检测 (事中)</h4>
-			<p>针对高阶复杂关联与未知威胁，我们提出了基于行为流建模、图神经网络（GNN）与大模型（LLM）的异常检测框架。通过模型轻量化与鲁棒性增强，实现低虚警、零漏报的实时入侵与攻击检测。</p>
-		</div>
-		<div class="card">
-			<h4>🔍 攻击溯源与取证 (事后)</h4>
-			<p>当安全事件发生，我们利用创新的"影子路径引导"、行为图抽象等技术，突破依赖爆炸与语义鸿沟的瓶颈，精准还原攻击故事，实现复杂多步骤攻击的动态实时跟随。</p>
-		</div>
-		<div class="card">
-			<h4>🩹 根因定位与自愈阻断 (闭环)</h4>
-			<p>从发现攻击到修复漏洞的"最后一公里"。我们致力于将恶意行为精准映射至源代码或二进制函数的具体位置，并研发自动化运行时遏制技术，在不中断业务的前提下实现软件的动态自愈。</p>
-		</div>
-	</div>
-
-	<h3 class="section-title">全场景覆盖：从底层系统到前沿AI应用</h3>
-	<p style="margin-bottom: 20px; color: #475569;">现代软件架构日益多样化，我们的安全自愈体系不仅具备理论深度，更在多种实际工业场景与异构对象中得到了广泛验证：</p>
-	
-	<ul class="scenario-list">
-		<li>
-			<span class="scenario-tag">🌐 Web应用与服务</span>
-			<p class="scenario-desc">高并发下的请求级攻击溯源与无训练异常检测、漏洞自动化运行时遏制（如请求级拦截）。</p>
-		</li>
-		<li>
-			<span class="scenario-tag">☁ 云原生与微服务</span>
-			<p class="scenario-desc">Serverless无感知计算的溯源分析、Go微服务协程粒度的算法复杂度攻击（AC-DoS）防御。</p>
-		</li>
-		<li>
-			<span class="scenario-tag">💻 底层系统与终端</span>
-			<p class="scenario-desc">C/C++二进制程序的漏洞定位、面向实际部署的鲁棒终端威胁检测、Linux系统调用层面的日志融合。</p>
-		</li>
-		<li>
-			<span class="scenario-tag">🧠 大模型与AI安全</span>
-			<p class="scenario-desc">针对大推理模型（LRM）的资源消耗型攻击防御、大语言模型强化学习安全策略、LLM文本水印溯源。</p>
-		</li>
-		<li>
-			<span class="scenario-tag">⚙ 工业与通用代码</span>
-			<p class="scenario-desc">复杂网络交互中的图异常检测、功能性代码克隆与脆弱性分析。</p>
-		</li>
-	</ul>
-
-	<div class="pub-summary">
-		近年来，团队在上述领域取得了一系列突破性进展，相关成果已广泛发表于 <strong>IEEE S&amp;P, USENIX Security, ICSE, FSE, AAAI, WWW, ICLR, NeurIPS, ECML PKDD, IEEE TIFS, IEEE TDSC, IEEE TSC, TPAMI, IEEE TNNLS</strong> 等网络安全、软件工程与人工智能领域的国际顶级会议及期刊上。
-	</div>
-
-	<div style="max-width: 900px; margin: 40px auto; text-align: center;">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%" style="background-color: #FFFFFF; font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;">
-			<defs>
-				<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-					<circle cx="2" cy="2" r="1.5" fill="rgba(15, 23, 42, 0.04)" />
-				</pattern>
-				<filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-					<feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08" />
-				</filter>
-				<filter id="shadow-sm" x="-10%" y="-10%" width="120%" height="120%">
-					<feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06" />
-				</filter>
-				<linearGradient id="grad-1" x1="0%" y1="100%" x2="100%" y2="0%">
-					<stop offset="0%" stop-color="#3B82F6" />
-					<stop offset="100%" stop-color="#8B5CF6" />
-				</linearGradient>
-				<linearGradient id="grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
-					<stop offset="0%" stop-color="#8B5CF6" />
-					<stop offset="100%" stop-color="#EC4899" />
-				</linearGradient>
-				<linearGradient id="grad-3" x1="100%" y1="0%" x2="0%" y2="100%">
-					<stop offset="0%" stop-color="#EC4899" />
-					<stop offset="100%" stop-color="#10B981" />
-				</linearGradient>
-				<linearGradient id="grad-4" x1="100%" y1="100%" x2="0%" y2="0%">
-					<stop offset="0%" stop-color="#10B981" />
-					<stop offset="100%" stop-color="#3B82F6" />
-				</linearGradient>
-				<linearGradient id="core-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-					<stop offset="0%" stop-color="#0EA5E9" />
-					<stop offset="100%" stop-color="#2563EB" />
-				</linearGradient>
-			</defs>
-			<rect width="100%" height="100%" fill="#FFFFFF" />
-			<rect width="100%" height="100%" fill="url(#grid)" />
-			<g stroke="rgba(148, 163, 184, 0.4)" stroke-width="2" stroke-dasharray="6,6">
-				<line x1="500" y1="320" x2="180" y2="320" />
-				<line x1="500" y1="320" x2="500" y2="120" />
-				<line x1="500" y1="320" x2="820" y2="320" />
-				<line x1="500" y1="320" x2="500" y2="520" />
-			</g>
-			<g stroke="rgba(148, 163, 184, 0.3)" stroke-width="2" stroke-dasharray="4,4">
-				<line x1="180" y1="320" x2="180" y2="680" />
-				<line x1="500" y1="520" x2="500" y2="680" />
-				<line x1="820" y1="320" x2="820" y2="680" />
-			</g>
-			<path d="M 180,320 A 320 200 0 0 1 500,120" fill="none" stroke="url(#grad-1)" stroke-width="8" filter="url(#shadow-sm)" />
-			<path d="M 500,120 A 320 200 0 0 1 820,320" fill="none" stroke="url(#grad-2)" stroke-width="8" filter="url(#shadow-sm)" />
-			<path d="M 820,320 A 320 200 0 0 1 500,520" fill="none" stroke="url(#grad-3)" stroke-width="8" filter="url(#shadow-sm)" />
-			<path d="M 500,520 A 320 200 0 0 1 180,320" fill="none" stroke="url(#grad-4)" stroke-width="8" filter="url(#shadow-sm)" />
-			<g>
-				<g transform="translate(273, 178) rotate(35)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#6D28D9" filter="url(#shadow-sm)"/></g>
-				<g transform="translate(727, 178) rotate(145)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#DB2777" filter="url(#shadow-sm)"/></g>
-				<g transform="translate(727, 462) rotate(215)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#059669" filter="url(#shadow-sm)"/></g>
-				<g transform="translate(273, 462) rotate(325)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#2563EB" filter="url(#shadow-sm)"/></g>
-			</g>
-			<g transform="translate(180, 320)">
-				<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#3B82F6" stroke-width="4" filter="url(#shadow)" />
-				<circle cx="0" cy="0" r="35" fill="#EFF6FF" />
-				<path d="M-15,-8 C-15,-12 15,-12 15,-8 L15,8 C15,12 -15,12 -15,8 Z M-15,-2 C-15,2 15,2 15,-2 M-15,3 C-15,7 15,7 15,3" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-				<text x="0" y="75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">事前: 部署与数据基石</text>
-				<text x="0" y="98" text-anchor="middle" fill="#64748B" font-size="14">多源融合  •  细粒度标注  •  图压缩</text>
-			</g>
-			<g transform="translate(500, 120)">
-				<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="4" filter="url(#shadow)" />
-				<circle cx="0" cy="0" r="35" fill="#F5F3FF" />
-				<path d="M0,-16 L-14,-10 L-14,2 C-14,12 0,18 0,18 C0,18 14,12 14,2 L14,-10 Z" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linejoin="round"/>
-				<path d="M-6,0 L-2,4 L8,-6" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-				<text x="0" y="-75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">事中: 运行时智能检测</text>
-				<text x="0" y="-55" text-anchor="middle" fill="#64748B" font-size="14">行为流建模  •  GNN异常检测  •  模型轻量化</text>
-			</g>
-			<g transform="translate(820, 320)">
-				<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#EC4899" stroke-width="4" filter="url(#shadow)" />
-				<circle cx="0" cy="0" r="35" fill="#FDF2F8" />
-				<circle cx="-4" cy="-4" r="8" fill="none" stroke="#DB2777" stroke-width="2.5"/>
-				<line x1="2" y1="2" x2="12" y2="12" stroke="#DB2777" stroke-width="2.5" stroke-linecap="round"/>
-				<circle cx="12" cy="12" r="2" fill="#DB2777"/>
-				<text x="0" y="75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">事后: 攻击溯源与取证</text>
-				<text x="0" y="98" text-anchor="middle" fill="#64748B" font-size="14">影子路径  •  行为图抽象  •  动态跟随</text>
-			</g>
-			<g transform="translate(500, 520)">
-				<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#10B981" stroke-width="4" filter="url(#shadow)" />
-				<circle cx="0" cy="0" r="35" fill="#ECFDF5" />
-				<path d="M-10,10 L-2,2 M2,-2 C4,-4 8,-4 10,-2 C12,0 12,4 10,6 L8,8 L4,4 L2,6 L4,8 L2,10 C0,12 -4,12 -6,10 C-8,8 -8,4 -6,2 L-2,6 Z" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-				<text x="0" y="75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">闭环: 根因定位与自愈阻断</text>
-				<text x="0" y="98" text-anchor="middle" fill="#64748B" font-size="14">运行时遏制  •  协程级隔离  •  漏洞定位</text>
-			</g>
-			<g transform="translate(500, 320)">
-				<polygon points="0,-75 65,-37.5 65,37.5 0,75 -65,37.5 -65,-37.5" fill="#FFFFFF" stroke="url(#core-grad)" stroke-width="4" filter="url(#shadow)" />
-				<polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="#EFF6FF" />
-				<text x="0" y="-5" text-anchor="middle" fill="#1E293B" font-size="20" font-weight="bold" letter-spacing="2">软件智能</text>
-				<text x="0" y="22" text-anchor="middle" fill="#2563EB" font-size="20" font-weight="bold" letter-spacing="2">自愈体系</text>
-			</g>
-			<g transform="translate(0, 680)">
-				<rect x="50" y="0" width="900" height="90" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" />
-				<text x="500" y="-20" text-anchor="middle" fill="#64748B" font-size="16" font-weight="bold" letter-spacing="1">全场景安全防护</text>
-				<g transform="translate(70, 15)">
-					<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
-					<circle cx="30" cy="30" r="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-					<ellipse cx="30" cy="30" rx="6" ry="14" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
-					<line x1="16" y1="30" x2="44" y2="30" stroke="#3B82F6" stroke-width="1.5"/>
-					<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">Web应用与服务</text>
-				</g>
-				<g transform="translate(245, 15)">
-					<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
-					<path d="M35,35 A8,8 0 0,1 25,35 A6,6 0 0,1 25,23 A9,9 0 0,1 41,23 A7,7 0 0,1 35,35 Z" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round"/>
-					<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">云原生与微服务</text>
-				</g>
-				<g transform="translate(420, 15)">
-					<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
-					<rect x="18" y="20" width="24" height="20" rx="2" fill="none" stroke="#EC4899" stroke-width="2"/>
-					<polyline points="22,25 26,29 22,33" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
-					<line x1="28" y1="33" x2="34" y2="33" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
-					<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">底层系统与终端</text>
-				</g>
-				<g transform="translate(595, 15)">
-					<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
-					<path d="M30,18 C22,18 18,24 18,30 C18,36 22,42 30,42 C38,42 42,36 42,30 C42,24 38,18 30,18 Z M24,30 A6,6 0 0,1 36,30" fill="none" stroke="#10B981" stroke-width="2"/>
-					<circle cx="30" cy="30" r="2" fill="#10B981"/>
-					<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">大模型与AI安全</text>
-				</g>
-				<g transform="translate(770, 15)">
-					<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
-					<polyline points="24,22 18,30 24,38" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					<polyline points="36,22 42,30 36,38" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					<line x1="32" y1="20" x2="28" y2="40" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
-					<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">工业与通用代码</text>
-				</g>
-			</g>
-		</svg>
-	</div>
-
+<div class="vision-box">
+<h2>团队科研愿景：面向全场景的软件智能自愈与全链路安全体系</h2>
+<p>在日益复杂的网络威胁环境下，传统的"被动防御"已难以应对高级持续性威胁（APT）与未知漏洞利用。我们团队致力于打破传统安全防护的孤岛，以<strong>"软件智能自愈"</strong>为核心愿景，构建覆盖<strong>"事前数据准备 — 事中异常检测 — 事后溯源定位 — 实时自愈阻断"</strong>的全链路安全闭环。</p>
 </div>
-
+<h3 class="section-title">科研主线：智能自愈的安全闭环</h3>
+<p style="margin-bottom: 20px; color: #475569;">我们的研究工作紧密围绕软件生命周期与攻击发生的时间线，形成了四个环环相扣的子方向：</p>
+<div class="grid-cards">
+<div class="card">
+<h4>🛠 部署与数据基石 (事前)</h4>
+<p>高质量的数据是智能安全的前提。我们研究多源异构日志的融合、细粒度自动化标注技术，以及面向大规模取证的溯源图压缩算法，为复杂的安全分析提供低噪、高密度的可靠数据空间。</p>
+</div>
+<div class="card">
+<h4>🛡 运行时智能检测 (事中)</h4>
+<p>针对高阶复杂关联与未知威胁，我们提出了基于行为流建模、图神经网络（GNN）与大模型（LLM）的异常检测框架。通过模型轻量化与鲁棒性增强，实现低虚警、零漏报的实时入侵与攻击检测。</p>
+</div>
+<div class="card">
+<h4>🔍 攻击溯源与取证 (事后)</h4>
+<p>当安全事件发生，我们利用创新的"影子路径引导"、行为图抽象等技术，突破依赖爆炸与语义鸿沟的瓶颈，精准还原攻击故事，实现复杂多步骤攻击的动态实时跟随。</p>
+</div>
+<div class="card">
+<h4>🩹 根因定位与自愈阻断 (闭环)</h4>
+<p>从发现攻击到修复漏洞的"最后一公里"。我们致力于将恶意行为精准映射至源代码或二进制函数的具体位置，并研发自动化运行时遏制技术，在不中断业务的前提下实现软件的动态自愈。</p>
+</div>
+</div>
+<h3 class="section-title">全场景覆盖：从底层系统到前沿AI应用</h3>
+<p style="margin-bottom: 20px; color: #475569;">现代软件架构日益多样化，我们的安全自愈体系不仅具备理论深度，更在多种实际工业场景与异构对象中得到了广泛验证：</p>
+<ul class="scenario-list">
+<li>
+<span class="scenario-tag">🌐 Web应用与服务</span>
+<p class="scenario-desc">高并发下的请求级攻击溯源与无训练异常检测、漏洞自动化运行时遏制（如请求级拦截）。</p>
+</li>
+<li>
+<span class="scenario-tag">☁ 云原生与微服务</span>
+<p class="scenario-desc">Serverless无感知计算的溯源分析、Go微服务协程粒度的算法复杂度攻击（AC-DoS）防御。</p>
+</li>
+<li>
+<span class="scenario-tag">💻 底层系统与终端</span>
+<p class="scenario-desc">C/C++二进制程序的漏洞定位、面向实际部署的鲁棒终端威胁检测、Linux系统调用层面的日志融合。</p>
+</li>
+<li>
+<span class="scenario-tag">🧠 大模型与AI安全</span>
+<p class="scenario-desc">针对大推理模型（LRM）的资源消耗型攻击防御、大语言模型强化学习安全策略、LLM文本水印溯源。</p>
+</li>
+<li>
+<span class="scenario-tag">⚙ 工业与通用代码</span>
+<p class="scenario-desc">复杂网络交互中的图异常检测、功能性代码克隆与脆弱性分析。</p>
+</li>
+</ul>
+<div class="pub-summary">
+近年来，团队在上述领域取得了一系列突破性进展，相关成果已广泛发表于 <strong>IEEE S&amp;P, USENIX Security, ICSE, FSE, AAAI, WWW, ICLR, NeurIPS, ECML PKDD, IEEE TIFS, IEEE TDSC, IEEE TSC, TPAMI, IEEE TNNLS</strong> 等网络安全、软件工程与人工智能领域的国际顶级会议及期刊上。
+</div>
+<div style="max-width: 900px; margin: 40px auto; text-align: center;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%" style="background-color: #FFFFFF; font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;">
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1.5" fill="rgba(15, 23, 42, 0.04)" />
+</pattern>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+<feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08" />
+</filter>
+<filter id="shadow-sm" x="-10%" y="-10%" width="120%" height="120%">
+<feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06" />
+</filter>
+<linearGradient id="grad-1" x1="0%" y1="100%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#3B82F6" />
+<stop offset="100%" stop-color="#8B5CF6" />
+</linearGradient>
+<linearGradient id="grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#8B5CF6" />
+<stop offset="100%" stop-color="#EC4899" />
+</linearGradient>
+<linearGradient id="grad-3" x1="100%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#EC4899" />
+<stop offset="100%" stop-color="#10B981" />
+</linearGradient>
+<linearGradient id="grad-4" x1="100%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#10B981" />
+<stop offset="100%" stop-color="#3B82F6" />
+</linearGradient>
+<linearGradient id="core-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0EA5E9" />
+<stop offset="100%" stop-color="#2563EB" />
+</linearGradient>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF" />
+<rect width="100%" height="100%" fill="url(#grid)" />
+<g stroke="rgba(148, 163, 184, 0.4)" stroke-width="2" stroke-dasharray="6,6">
+<line x1="500" y1="320" x2="180" y2="320" />
+<line x1="500" y1="320" x2="500" y2="120" />
+<line x1="500" y1="320" x2="820" y2="320" />
+<line x1="500" y1="320" x2="500" y2="520" />
+</g>
+<g stroke="rgba(148, 163, 184, 0.3)" stroke-width="2" stroke-dasharray="4,4">
+<line x1="180" y1="320" x2="180" y2="680" />
+<line x1="500" y1="520" x2="500" y2="680" />
+<line x1="820" y1="320" x2="820" y2="680" />
+</g>
+<path d="M 180,320 A 320 200 0 0 1 500,120" fill="none" stroke="url(#grad-1)" stroke-width="8" filter="url(#shadow-sm)" />
+<path d="M 500,120 A 320 200 0 0 1 820,320" fill="none" stroke="url(#grad-2)" stroke-width="8" filter="url(#shadow-sm)" />
+<path d="M 820,320 A 320 200 0 0 1 500,520" fill="none" stroke="url(#grad-3)" stroke-width="8" filter="url(#shadow-sm)" />
+<path d="M 500,520 A 320 200 0 0 1 180,320" fill="none" stroke="url(#grad-4)" stroke-width="8" filter="url(#shadow-sm)" />
+<g>
+<g transform="translate(273, 178) rotate(35)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#6D28D9" filter="url(#shadow-sm)"/></g>
+<g transform="translate(727, 178) rotate(145)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#DB2777" filter="url(#shadow-sm)"/></g>
+<g transform="translate(727, 462) rotate(215)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#059669" filter="url(#shadow-sm)"/></g>
+<g transform="translate(273, 462) rotate(325)"><polygon points="-10,-10 15,0 -10,10 -2,0" fill="#2563EB" filter="url(#shadow-sm)"/></g>
+</g>
+<g transform="translate(180, 320)">
+<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#3B82F6" stroke-width="4" filter="url(#shadow)" />
+<circle cx="0" cy="0" r="35" fill="#EFF6FF" />
+<path d="M-15,-8 C-15,-12 15,-12 15,-8 L15,8 C15,12 -15,12 -15,8 Z M-15,-2 C-15,2 15,2 15,-2 M-15,3 C-15,7 15,7 15,3" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="0" y="75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">事前: 部署与数据基石</text>
+<text x="0" y="98" text-anchor="middle" fill="#64748B" font-size="14">多源融合  •  细粒度标注  •  图压缩</text>
+</g>
+<g transform="translate(500, 120)">
+<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="4" filter="url(#shadow)" />
+<circle cx="0" cy="0" r="35" fill="#F5F3FF" />
+<path d="M0,-16 L-14,-10 L-14,2 C-14,12 0,18 0,18 C0,18 14,12 14,2 L14,-10 Z" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-6,0 L-2,4 L8,-6" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="0" y="-75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">事中: 运行时智能检测</text>
+<text x="0" y="-55" text-anchor="middle" fill="#64748B" font-size="14">行为流建模  •  GNN异常检测  •  模型轻量化</text>
+</g>
+<g transform="translate(820, 320)">
+<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#EC4899" stroke-width="4" filter="url(#shadow)" />
+<circle cx="0" cy="0" r="35" fill="#FDF2F8" />
+<circle cx="-4" cy="-4" r="8" fill="none" stroke="#DB2777" stroke-width="2.5"/>
+<line x1="2" y1="2" x2="12" y2="12" stroke="#DB2777" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="12" cy="12" r="2" fill="#DB2777"/>
+<text x="0" y="75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">事后: 攻击溯源与取证</text>
+<text x="0" y="98" text-anchor="middle" fill="#64748B" font-size="14">影子路径  •  行为图抽象  •  动态跟随</text>
+</g>
+<g transform="translate(500, 520)">
+<circle cx="0" cy="0" r="45" fill="#FFFFFF" stroke="#10B981" stroke-width="4" filter="url(#shadow)" />
+<circle cx="0" cy="0" r="35" fill="#ECFDF5" />
+<path d="M-10,10 L-2,2 M2,-2 C4,-4 8,-4 10,-2 C12,0 12,4 10,6 L8,8 L4,4 L2,6 L4,8 L2,10 C0,12 -4,12 -6,10 C-8,8 -8,4 -6,2 L-2,6 Z" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="0" y="75" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="bold">闭环: 根因定位与自愈阻断</text>
+<text x="0" y="98" text-anchor="middle" fill="#64748B" font-size="14">运行时遏制  •  协程级隔离  •  漏洞定位</text>
+</g>
+<g transform="translate(500, 320)">
+<polygon points="0,-75 65,-37.5 65,37.5 0,75 -65,37.5 -65,-37.5" fill="#FFFFFF" stroke="url(#core-grad)" stroke-width="4" filter="url(#shadow)" />
+<polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="#EFF6FF" />
+<text x="0" y="-5" text-anchor="middle" fill="#1E293B" font-size="20" font-weight="bold" letter-spacing="2">软件智能</text>
+<text x="0" y="22" text-anchor="middle" fill="#2563EB" font-size="20" font-weight="bold" letter-spacing="2">自愈体系</text>
+</g>
+<g transform="translate(0, 680)">
+<rect x="50" y="0" width="900" height="90" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" />
+<text x="500" y="-20" text-anchor="middle" fill="#64748B" font-size="16" font-weight="bold" letter-spacing="1">全场景安全防护</text>
+<g transform="translate(70, 15)">
+<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
+<circle cx="30" cy="30" r="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+<ellipse cx="30" cy="30" rx="6" ry="14" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
+<line x1="16" y1="30" x2="44" y2="30" stroke="#3B82F6" stroke-width="1.5"/>
+<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">Web应用与服务</text>
+</g>
+<g transform="translate(245, 15)">
+<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
+<path d="M35,35 A8,8 0 0,1 25,35 A6,6 0 0,1 25,23 A9,9 0 0,1 41,23 A7,7 0 0,1 35,35 Z" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round"/>
+<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">云原生与微服务</text>
+</g>
+<g transform="translate(420, 15)">
+<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
+<rect x="18" y="20" width="24" height="20" rx="2" fill="none" stroke="#EC4899" stroke-width="2"/>
+<polyline points="22,25 26,29 22,33" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+<line x1="28" y1="33" x2="34" y2="33" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">底层系统与终端</text>
+</g>
+<g transform="translate(595, 15)">
+<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
+<path d="M30,18 C22,18 18,24 18,30 C18,36 22,42 30,42 C38,42 42,36 42,30 C42,24 38,18 30,18 Z M24,30 A6,6 0 0,1 36,30" fill="none" stroke="#10B981" stroke-width="2"/>
+<circle cx="30" cy="30" r="2" fill="#10B981"/>
+<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">大模型与AI安全</text>
+</g>
+<g transform="translate(770, 15)">
+<rect width="160" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow-sm)" />
+<polyline points="24,22 18,30 24,38" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="36,22 42,30 36,38" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="32" y1="20" x2="28" y2="40" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+<text x="55" y="35" fill="#1E293B" font-size="14" font-weight="bold">工业与通用代码</text>
+</g>
+</g>
+</svg>
+</div>
+</div>
 <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
-
-<h2 id="面向web应用的服务器端攻击调查技术">面向Web应用的服务器端攻击调查技术</h2>
+## 面向Web应用的服务器端攻击调查技术
 <div style="text-align: justify;">
 　　WEB应用一般采用浏览器-服务器架构（B-S架构），用户在PC上使用浏览器加载网站页面，通过各类界面操作来向服务端发送网络请求，以使用网站提供的各类功能。这种模式给了黑客可乘之机，他们可以通过攻击WEB应用来进入公司内网。当攻击发生并被入侵检测系统(IDS)报警后，安全人员希望找到精确的攻击入口，即黑客使用了什么功能、点击了什么按钮发起了这次攻击，以对漏洞进行精确的修复。但现有的攻击溯源手段无法达到理想的效果，无法成功溯源到黑客互动的界面元素（UI元素），其原因主要包括：缺少将攻击和UI元素进行关联的信息、很难采集客户端日志、以及部署于服务端的应用程序具有很高的并发量。
 </div>
@@ -694,6 +682,16 @@ Go语言微服务依赖M:N协程-线程调度模型实现高并发处理，但�
 <br/>
 <div style="text-align: justify;">
 研究小组提出了Culexus，首个面向Go微服务的协程粒度AC-DoS攻击检测与缓解框架，实现了从请求级资源归因到精准隔离的全链路防护。Culexus采用三阶段架构：首先，在请求入口注入唯一标识符并绑定至Go上下文传播链，随后利用低频内核探针对CPU活动进行统计采样，将资源消耗高效归因至单个请求，而非OS线程或进程；其次，通过离线训练阶段从正常流量中学习每个API端点的CPU开销阈值模型，在线监控模块在内核层实时标记超出预算的异常请求；最后，在缓解层面，Culexus设计了一种与Go运行时深度协同的两级自适应策略——对于可抢占的攻击协程，利用Go运行时原生的异步抢占机制实施精确的协程级终止，将响应时间压缩至毫秒级；对于陷入CGo调用等不可抢占场景的顽固攻击，自动升级为线程级遏制策略，通过CPU压制攻击线程的同时，借助Go调度器的P Handoff机制将该线程上的正常协程迁移至健康线程继续执行，从而在不中断正常服务的前提下隔离恶意负载。基于16种多样化攻击场景（涵盖12个真实CVE）的评估结果显示，Culexus在测试基准上实现了100%的检测准确率，对可抢占攻击达到毫秒级精准终止，对顽固攻击场景下正常流量的吞吐影响控制在7%以内，整体性能开销低于8%，在高并发Go微服务环境中实现了高效的协程粒度精准隔离与防护。相关成果发表于服务计算领域顶级期刊IEEE Transactions on Services Computing（TSC）。
+</div><br/>
+<h1 id="面向有状态web攻击的目标导向式攻击链自动化重建技术">面向有状态Web攻击的目标导向式攻击链自动化重建技术</h1>
+<div style="text-align: justify;">
+现代企业级Web应用已演变为高度有状态的复杂架构，关键业务逻辑分布在庞大的API生态系统中。攻击者利用这一特性发起多步有状态攻击：通过一系列"状态设置"请求逐步操纵后端数据库或文件系统，建立必要前置条件后，最终请求方触发恶意载荷执行。然而，安全信息与事件管理（SIEM）系统和入侵检测系统通常仅在最终异常请求处触发告警，而前序状态设置请求因表面合法而被淹没在海量高速流量日志中。缺失完整的前置请求序列，安全人员无法在沙箱中复现攻击，根因分析、补丁验证和威胁追踪因此陷入困境。现有自动化方案存在根本性局限：覆盖率导向的灰盒模糊测试工具缺乏对特定漏洞的目标感知能力；定向模糊测试仅关注单请求内的代码可达性，无法推理跨请求的状态构建序列；RESTful API序列生成方法要么依赖人工标注的规格文档，要么依赖理想化的RESTful语义约定推断API依赖，难以泛化至不遵循标准设计的真实应用，且其参数生成对后端应用状态完全盲视，无法从已有系统状态中追溯攻击所需的关键参数值。
+</div>
+<br/>
+<center><img src="/img/research/pyh6.png" style="width: 80%;"/></center>
+<br/>
+<div style="text-align: justify;">
+研究小组提出了Ariadne，一个目标导向的有状态Web攻击链自动化重建框架，仅需给定最终异常请求即可自动重建完整的前置请求序列。Ariadne将攻击链重建形式化为受引导的状态空间搜索问题，以最终攻击所需的后端状态为目标，以状态距离度量为反馈信号，高效导航搜索过程。框架围绕三项核心技术展开：首先，在状态距离导航层面，通过对最终攻击请求进行动态系统调用分析，精确刻画其对后端数据的依赖关系，构建目标状态画像，并创新性地引入基于二部图最小权匹配的状态距离度量，准确量化当前状态与目标状态之间的差异，为搜索过程提供清晰的导航信号；其次，在目标导向的API选择层面，构建数据驱动的API依赖图以捕获API间的实际概率继承关系，采用多启发式规划策略在依赖图上寻找通往目标状态的最短路径，并预检候选路径的参数可满足性，避免无效探索；最后，在状态驱动的参数溯源层面，将后端状态（数据库、文件系统）纳入参数值来源，通过分析各数据源与API参数之间的相似性，精准追溯攻击过程中残留在系统中的信息并回填至前置请求参数中，大幅提升有效请求的生成命中率。基于11个广泛使用的开源应用中13个真实多步有状态漏洞（CVE/CNVD）的评估结果显示，Ariadne成功重建了全部目标攻击链，包括长达8步的复杂攻击序列，所有重建均在20分钟内完成，并在5个案例中发现了比公开PoC更短更高效的攻击路径；而现有最优基线工具即使被额外提供必要的攻击载荷，仍无法重建任何需要三步及以上的攻击序列。相关成果发表于系统安全领域顶级期刊IEEE Transactions on Dependable and Secure Computing（TDSC）。
 </div><br/>
 
 		</div>
